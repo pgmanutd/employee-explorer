@@ -45,7 +45,6 @@
   "bugs": {
     "url": "https://github.com/pgmanutd/employee-explorer/issues"
   },
-  "homepage": "https://github.com/pgmanutd/employee-explorer#readme",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "lodash": "^4.17.15",
