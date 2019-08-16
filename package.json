@@ -36,7 +36,9 @@
     "multi-way-tree",
     "duplicates",
     "duplicates-removal",
-    "remove-duplicates"
+    "remove-duplicates",
+    "traversal",
+    "tree-traversal"
   ],
   "author": "pgmanutd <prashantmanunited@gmail.com>",
   "license": "MIT",
