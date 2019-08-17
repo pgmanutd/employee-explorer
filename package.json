@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Recursive employee explorer (multiway tree) using React along with duplicates removal",
   "scripts": {
-    "start": "react-scripts start",
-    "dev": "npm run start",
+    "start:server": "nodemon server",
+    "start:client": "react-scripts start",
+    "start": "concurrently -c \"bgBlue.bold,bgMagenta.bold\" \"npm:start:server\" \"npm:start:client\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --cache --cache-location \".cache/.eslintcache/\"",
     "format": "npm run lint -- --fix",
     "test": "react-scripts test",
@@ -47,6 +48,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "express": "^4.17.1",
     "lodash": "^4.17.15",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
@@ -56,13 +58,15 @@
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^4.0.0",
-    "@testing-library/react": "^9.1.2",
+    "@testing-library/react": "^9.1.3",
+    "concurrently": "^4.1.2",
     "cross-env": "^5.2.0",
     "eslint": "^6.1.0",
     "eslint-plugin-prettier": "^3.1.0",
     "history": "^4.9.0",
     "http-proxy-middleware": "^0.19.1",
     "jest-localstorage-mock": "^2.4.0",
+    "nodemon": "^1.19.1",
     "prettier": "^1.18.2"
   },
   "eslintConfig": {

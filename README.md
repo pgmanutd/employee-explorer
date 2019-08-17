@@ -18,7 +18,14 @@ npm start
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm start:server`
+
+Runs the express server in the development mode.<br>
+Open [http://localhost:4000](http://localhost:4000) to view it in the browser.
+
+The server will restart if you make edits.
+
+### `npm start:client`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -26,9 +33,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
-### `npm run dev`
+### `npm start`
 
-Alias for npm start
+Runs client and server scripts in parallel.
 
 ### `npm run lint`
 
