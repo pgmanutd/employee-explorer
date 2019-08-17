@@ -18,14 +18,14 @@ npm start
 
 In the project directory, you can run:
 
-### `npm start:server`
+### `npm run start:server`
 
 Runs the express server in the development mode.<br>
 Open [http://localhost:4000](http://localhost:4000) to view it in the browser.
 
 The server will restart if you make edits.
 
-### `npm start:client`
+### `npm run start:client`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
