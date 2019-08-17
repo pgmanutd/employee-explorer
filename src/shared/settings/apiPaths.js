@@ -1,4 +1,5 @@
 const apiPaths = {
+  employees: () => '/api/employees',
   employeeDetails: ({ employeeName }) => `/api/employees/${employeeName}`,
 };
 
