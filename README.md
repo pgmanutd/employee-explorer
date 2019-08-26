@@ -1,4 +1,5 @@
 # 🎉 employee-explorer
+Recursive employee explorer (multiway tree) using React along with duplicates removal.
 
 ## Development
 
