@@ -6,7 +6,7 @@ import useFetch from 'shared/hooks/useFetch';
 
 import Spinner from 'shared/components/Spinner';
 
-const AvailableEmployees = props => {
+const AvailableEmployees = (props) => {
   const { isLoading, data: employees, error } = useFetch({
     url: apiPaths.employees(),
   });
@@ -30,7 +30,7 @@ const AvailableEmployees = props => {
       </p>
       {employees && employees.length > 0 ? (
         <ul>
-          {employees.map(employeeName => (
+          {employees.map((employeeName) => (
             <li key={employeeName}>{employeeName}</li>
           ))}
         </ul>

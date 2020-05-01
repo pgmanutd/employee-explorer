@@ -15,7 +15,7 @@ const NotFound = lazy(() =>
   import(/* webpackChunkName: "NotFound" */ 'pages/NotFound'),
 );
 
-const App = props => (
+const App = (props) => (
   <div data-testid="App" className="container-fluid" {...props}>
     <div className="row justify-content-center">
       <main className="col-10 py-md-3 pl-md-5 bd-content" role="main">

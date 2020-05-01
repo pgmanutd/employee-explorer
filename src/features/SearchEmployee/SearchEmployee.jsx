@@ -7,7 +7,7 @@ import { EMPLOYEE_SEARCH_HISTORY_LOCAL_STORAGE_DETAILS } from 'shared/appConstan
 
 import useLocalStorage from 'shared/hooks/useLocalStorage';
 
-const SearchEmployee = props => {
+const SearchEmployee = (props) => {
   const [employeeName, setEmployeeName] = useState('');
 
   const [employeeSearchHistory, setEmployeeSearchHistory] = useLocalStorage(
@@ -15,12 +15,12 @@ const SearchEmployee = props => {
     EMPLOYEE_SEARCH_HISTORY_LOCAL_STORAGE_DETAILS.value,
   );
 
-  const handleEmployeeNameChange = useCallback(event => {
+  const handleEmployeeNameChange = useCallback((event) => {
     setEmployeeName(event.target.value);
   }, []);
 
   const handleSearch = useCallback(
-    event => {
+    (event) => {
       if (!employeeName.trim()) {
         return event.preventDefault();
       }

@@ -4,7 +4,7 @@ import parseJSON from 'shared/utils/parseJSON';
 
 const eventListenerName = 'onLocalStorageChange';
 
-const removeItemFromLocalStorage = key => {
+const removeItemFromLocalStorage = (key) => {
   localStorage.removeItem(key);
 };
 
@@ -35,7 +35,7 @@ const useLocalStorage = (key, initialValue) => {
     };
   }, [initialValue, key]);
 
-  const setItem = item => {
+  const setItem = (item) => {
     setStoredItem(item);
 
     addItemToLocalStorage(key, item);

@@ -7,7 +7,7 @@ import SearchEmployee from '../SearchEmployee';
 
 describe('SearchEmployee', () => {
   const renderComponent = () => renderWithRouter(<SearchEmployee />);
-  const inputEmployeeName = ({ getByPlaceholderText }) => employeeName =>
+  const inputEmployeeName = ({ getByPlaceholderText }) => (employeeName) =>
     fireEvent.change(getByPlaceholderText('Employee Name'), {
       target: { value: employeeName },
     });

@@ -1,6 +1,6 @@
 import { useRef, useDebugValue } from 'react';
 
-const useLazyRef = lazyInitializer => {
+const useLazyRef = (lazyInitializer) => {
   const ref = useRef(null);
   const { current } = ref;
 

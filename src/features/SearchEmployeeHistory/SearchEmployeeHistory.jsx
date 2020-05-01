@@ -7,7 +7,7 @@ import { EMPLOYEE_SEARCH_HISTORY_LOCAL_STORAGE_DETAILS } from 'shared/appConstan
 
 import useLocalStorage from 'shared/hooks/useLocalStorage';
 
-const SearchEmployeeHistory = props => {
+const SearchEmployeeHistory = (props) => {
   const [employeeSearchHistory, , clearEmployeeSearchHistory] = useLocalStorage(
     EMPLOYEE_SEARCH_HISTORY_LOCAL_STORAGE_DETAILS.key,
     EMPLOYEE_SEARCH_HISTORY_LOCAL_STORAGE_DETAILS.value,
@@ -30,7 +30,7 @@ const SearchEmployeeHistory = props => {
             Clear
           </button>
           <ul>
-            {employeeSearchHistory.map(employeeName => (
+            {employeeSearchHistory.map((employeeName) => (
               <li key={employeeName}>
                 <Link
                   to={`${routePaths.employeeOverview.base}/${employeeName}`}

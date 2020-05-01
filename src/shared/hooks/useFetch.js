@@ -2,7 +2,7 @@ import { useReducer, useEffect } from 'react';
 
 const defaultInitialState = { data: null, isLoading: false, error: null };
 
-const init = initialState => initialState || defaultInitialState;
+const init = (initialState) => initialState || defaultInitialState;
 
 const reducer = (state, { type, data, error }) => {
   switch (type) {

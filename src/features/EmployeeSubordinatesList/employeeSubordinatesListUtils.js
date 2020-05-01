@@ -15,9 +15,9 @@ export const isEmployeePresent = Array.isArray;
 // 4 5  *6* 7     *6*
 export const getSubordinates = ({ fetchedSubordinatesList }) =>
   _compose(
-    _tap(directSubordinates =>
+    _tap((directSubordinates) =>
       // NOTE: A sideEffect. So kept this in tap method.
-      directSubordinates.forEach(directSubordinate =>
+      directSubordinates.forEach((directSubordinate) =>
         fetchedSubordinatesList.current.set(directSubordinate, true),
       ),
     ),

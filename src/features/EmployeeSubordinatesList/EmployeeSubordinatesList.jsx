@@ -65,7 +65,7 @@ const EmployeeSubordinatesList = ({
       </p>
       {directSubordinates.length > 0 ? (
         <ul>
-          {directSubordinates.map(subordinateName => (
+          {directSubordinates.map((subordinateName) => (
             <li key={subordinateName}>
               <EmployeeSubordinatesList
                 employeeName={subordinateName}

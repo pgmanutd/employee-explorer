@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 
-const Spinner = props => (
+const Spinner = (props) => (
   <div
     data-testid="Spinner"
     className="d-flex justify-content-center"
